@@ -1,0 +1,124 @@
+html {
+  height: 100%;
+}
+p {
+  text-align: center;
+  font-size: 120%;
+  position: relative;
+  bottom: 0.5em;
+}
+body {
+  height: 100%;
+  background-repeat: no-repeat;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 0, 0, 0.6),
+    rgba(0, 0, 255, 0.664)
+  );
+}
+.structure {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header1 {
+  /* background-color: crimson; */
+  margin: 0em;
+  height: 5em;
+  position: relative;
+  right: 0em;
+  float: right;
+  width: 100%;
+}
+.label_top {
+  float: right;
+  padding-right: 2em;
+}
+.input_block1 {
+  /* margin-bottom: 2em; */
+  height: 20em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.full_frame {
+  height: 30em;
+  width: 20em;
+  padding: 0.2em;
+  border-radius: 2em;
+  background: linear-gradient(
+    240deg,
+    rgba(255, 38, 0, 0.348),
+    rgba(0, 55, 255, 0.325)
+  );
+}
+.frame {
+  border-radius: 1.8em;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 38, 0, 0.348),
+    rgba(0, 55, 255, 0.325)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.select {
+  margin-top: 0.1em;
+  height: 8em;
+  width: 8em;
+  background: linear-gradient(
+    45deg,
+    rgba(75, 2, 75, 0.364) 60%,
+    rgba(4, 85, 4, 0.396)
+  );
+  border-radius: 4em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.display_res {
+  font-size: 4em;
+}
+.click_section {
+  width: 100%;
+  height: 56%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  border-radius: 2em;
+}
+.button_item {
+  width: 90%;
+  height: 2.5em;
+  background: linear-gradient(
+    200deg,
+    rgba(255, 38, 0, 0.348),
+    rgba(0, 55, 255, 0.325)
+  );
+  border-radius: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.para {
+  height: 100%;
+  width: 16em;
+  /* background-color: red; */
+}
+.value {
+  height: 100%;
+  width: 3em;
+  /* background-color: blue; */
+}

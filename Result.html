@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Result</title>
+    <link rel="stylesheet" href="Main.css" />
+  </head>
+  <body>
+    <div class="structure">
+      <!-- <h1>BMI Result</h1> -->
+      <div id="bmiResult"></div>
+
+      <script>
+        let bmiData = JSON.parse(localStorage.getItem('bmiData'));
+
+        if (bmiData) {
+          document.getElementById('bmiResult').innerHTML = `
+      <div class="full_frame">
+      <div class="frame">
+        <div class="select"><div class="display_res">00</div></div>
+        <h1>${bmiData.bmiCategory}</h1>
+        <div class="click_section">
+          <div class="button_item">
+            <div class="para">
+              <p>height</p>
+            </div>
+            <div class="value">
+              <p>${bmiData.height}</p>
+            </div>
+          </div>
+          <div class="button_item">
+            <div class="para">
+              <p>Waight</p>
+            </div>
+            <div class="value">
+              <p>${bmiData.weight}</p>
+            </div>
+          </div>
+          <div class="button_item">
+            <div class="para">
+              <p>Current</p>
+            </div>
+            <div class="value">
+              <p>${bmiData.bmi}</p>
+            </div>
+          </div>
+          <div class="button_item">
+            <div class="para">
+              <p>Current</p>
+            </div>
+            <div class="value">
+              <p>20</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      `;
+        } else {
+          document.getElementById('bmiResult').innerHTML =
+            '<p>No BMI data found.</p>';
+        }
+        localStorage.removeItem('bmiData');
+      </script>
+    </div>
+  </body>
+</html>
